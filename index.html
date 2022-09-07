@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>math and Date</title>
+</head>
+
+<body>
+    <h1 id="title">Finanças NOW</h1>
+
+    <p class="sub-title">O Aplicativo Finanças NOW foi feito para te deixar no controle de todos seus gastos.</p>
+    <form id="cadastros">
+        <p>
+            <label>Nome da Dispesa:</label>
+            <input type="text" name="cadastro-dispesa">
+        </p>
+        <p>
+          <label>Valor da dispesa:</label>
+          <input type="number" name="cadastro-valor">
+        </p>
+        <p>
+          <label> Data do pagamento:</label>
+          <input type="date" name="cadastro-data">
+        </p>
+        <button onclick="addMe()" type="button">Adicionar</button>
+        
+        <ul id="dispesas-list"></ul>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>

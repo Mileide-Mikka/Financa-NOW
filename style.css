@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+form {
+    position: absolute;
+    align-items: center;
+    border: 1px solid;
+    width: 50%;
+    height: 80%;
+}
+
+#title {
+    text-align: center;
+    padding: 1rem;
+}
+
+.sub-title {
+    text-align: center;
+    padding: 0.5rem;
+}
+#cadastros {
+    padding: 0.5rem;
+    left: 20%;
+    top: 15%;
+    align-items: center;
+
+}
+
+input{
+    margin: 0.5rem;
+}
+
+button {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    position: relative;
+
+}
