@@ -3,7 +3,7 @@ function addMe(){
     let valor = document.querySelector("input[name='cadastro-valor']").value;
     let dataPagamento = document.querySelector("input[name='cadastro-data']").value;
 
-    let newListValue = document.createElement("li");
+    let newListValue = document.createElement("li")
     newListValue.innerText = "A " + dispesa + " no valor de R$" + valor + " foi paga nesta data " + dataPagamento;
     
 
@@ -12,6 +12,12 @@ function addMe(){
     removeButton.type = "button";
     removeButton.innerText = "Remover";
     removeButton.setAttribute("onclick", "removeDispesa(this)")
+    removeButton.style.color = "white"
+    removeButton.style.backgroundColor = "red";
+    removeButton.style.border = "none";
+    removeButton.style.borderRadius = "5px";
+    removeButton.style.padding = "10px";
+    removeButton.style.margin = "8px";
 
     newListValue.appendChild(removeButton)
 
@@ -22,5 +28,3 @@ function removeDispesa(button){
     let liToRemove = button.parentNode
     document.getElementById("dispesas-list").removeChild(liToRemove)
 }
-
-

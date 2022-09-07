@@ -2,14 +2,15 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    align-items: center;
+    
 }
 
 form {
     position: absolute;
-    align-items: center;
     border: 1px solid;
-    width: 50%;
-    height: 80%;
+    width: 60%;
+    height: 100%;
 }
 
 #title {
@@ -20,23 +21,36 @@ form {
 .sub-title {
     text-align: center;
     padding: 0.5rem;
+    font-weight: bold;
 }
 #cadastros {
     padding: 0.5rem;
     left: 20%;
     top: 15%;
-    align-items: center;
 
+}
+
+p > label {
+    font-size: 16px;
+    font-weight: bold;
 }
 
 input{
+    display: flex;
     margin: 0.5rem;
+    padding: 0.2rem;
+    width: 20%;
 }
 
-button {
+#addMeBnt {
     margin: 0.5rem;
     padding: 0.5rem;
     text-align: center;
+    left: 20%;
     position: relative;
-
+    color: white;
+    background-color: green;
+    border-radius: 0.2rem;
+    border: none;
 }
+
