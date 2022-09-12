@@ -13,20 +13,32 @@
 
     <p class="sub-title">O Aplicativo Finanças NOW foi feito para te deixar no controle de todos seus gastos.</p>
     <form id="cadastros">
+
+        <div class="tipoDespesa">
+          <label >Qual tipo de dispesa:</label> <br>
+          <br>
+          <input type="radio" value="entrada" name="tipo-despesa"> Entrada
+          <input type="radio" value="saida" name="tipo-despesa"> Saida
+        </div>
+
+        <br>
         <p>
             <label>Nome da Dispesa:</label>
             <input type="text" name="cadastro-dispesa">
         </p>
+        <br>
         <p>
-          <label>Valor da dispesa:</label>
+          <label>Valor:</label>
           <input type="number" name="cadastro-valor">
         </p>
+        <br>
         <p>
           <label> Data do pagamento:</label>
           <input type="date" name="cadastro-data">
         </p>
+        <br>
         <button id="addMeBnt" onclick="addMe()" type="button">Adicionar</button>
-        
+        <br>
         <ul id="dispesas-list"></ul>
     </form>
     <script src="script.js"></script>

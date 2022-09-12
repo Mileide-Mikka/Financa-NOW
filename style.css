@@ -33,13 +33,22 @@ form {
 p > label {
     font-size: 16px;
     font-weight: bold;
+    padding: 0.2rem;
+
 }
 
-input{
+p input{
     display: flex;
     margin: 0.5rem;
     padding: 0.2rem;
     width: 20%;
+}
+
+.tipoDespesa{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0.2rem;
+    margin-bottom: 0.2rem;
 }
 
 #addMeBnt {
@@ -52,5 +61,13 @@ input{
     background-color: green;
     border-radius: 0.2rem;
     border: none;
+}
+
+#dispesas-list{
+    list-style: none;
+    margin-top: 1rem;
+    font-size: 16px;
+    font-weight: bold;
+    
 }
 

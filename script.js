@@ -2,9 +2,11 @@ function addMe(){
     let dispesa = document.querySelector("input[name='cadastro-dispesa']").value;
     let valor = document.querySelector("input[name='cadastro-valor']").value;
     let dataPagamento = document.querySelector("input[name='cadastro-data']").value;
+    let tipoDespesa = document.querySelector("input[name='tipo-despesa']:checked").value;
+
 
     let newListValue = document.createElement("li")
-    newListValue.innerText = "A " + dispesa + " no valor de R$" + valor + " foi paga nesta data " + dataPagamento;
+    newListValue.innerText = "A " + dispesa + " no valor de R$" + valor + " foi paga nesta data " + dataPagamento + " Tipo de despesa " + tipoDespesa;
     
 
     // elemento para a remoção
