@@ -16,7 +16,7 @@ function addMe(){
     removeButton.setAttribute("onclick", "removeDispesa(this)")
     removeButton.style.color = "white"
     removeButton.style.backgroundColor = "red";
-    removeButton.style.border = "none";
+    removeButton.style.border = "red";
     removeButton.style.borderRadius = "5px";
     removeButton.style.padding = "10px";
     removeButton.style.margin = "8px";
