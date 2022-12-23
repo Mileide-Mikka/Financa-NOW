@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>math and Date</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>math and Date</title>
 </head>
 
 <body>
+  <header>
     <h1 id="title">Finanças NOW</h1>
+  </header>
 
-    <p class="sub-title">O Aplicativo Finanças NOW foi feito para te deixar no controle de todos seus gastos.</p>
-    <form id="cadastros">
+  <p class="sub-title">O Aplicativo Finanças NOW foi feito para te deixar no controle de todos seus gastos.</p>
+  <form id="cadastros">
 
-        <div class="tipoDespesa">
-          <label >Qual tipo de dispesa:</label> <br>
-          <br>
-          <input type="radio" value="entrada" name="tipo-despesa"> Entrada
-          <input type="radio" value="saida" name="tipo-despesa"> Saida
-        </div>
+    <div class="tipoDespesa">
+      <label>Qual tipo de dispesa:</label> <br>
+      <br>
+      <input type="radio" value="entrada" name="tipo-despesa"> Entrada
+      <input type="radio" value="saida" name="tipo-despesa"> Saida
+    </div>
 
-        <br>
-        <p>
-            <label>Nome da Dispesa:</label>
-            <input type="text" name="cadastro-dispesa">
-        </p>
-        <br>
-        <p>
-          <label>Valor:</label>
-          <input type="number" name="cadastro-valor">
-        </p>
-        <br>
-        <p>
-          <label> Data do pagamento:</label>
-          <input type="date" name="cadastro-data">
-        </p>
-        <br>
-        <button id="addMeBnt" onclick="addMe()" type="button">Adicionar</button>
-        <br>
-        <ul id="dispesas-list"></ul>
-    </form>
-    <script src="script.js"></script>
+    <br>
+
+    <p>
+      <label>Nome da Dispesa:</label>
+      <input type="text" name="cadastro-dispesa">
+    </p>
+    <br>
+    <p>
+      <label>Valor:</label>
+      <input type="number" name="cadastro-valor">
+    </p>
+    <br>
+    <p>
+      <label> Data do pagamento:</label>
+      <input type="date" name="cadastro-data">
+    </p>
+    <br>
+    <button id="addMeBnt" onclick="addMe()" type="button">Adicionar</button>
+    <br>
+    <ul id="dispesas-list"></ul>
+  </form>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
